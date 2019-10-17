@@ -1,6 +1,6 @@
 pragma solidity ^0.5.0;
 
-import "../GSN/Context.sol";
+import "./Context.sol";
 /**
  * @dev Contract module which provides a basic access control mechanism, where
  * there is an account (an owner) that can be granted exclusive access to
@@ -25,7 +25,7 @@ contract Ownable is Context {
     }
 
     /**
-     * @dev Returns the address of the current owner.
+     * @dev Returns the address of the current owner. payable
      */
     function owner() public view returns (address) {
         return _owner;
